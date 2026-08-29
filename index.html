@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rubel-Personal Portfolio Template</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/slick-slider.css" />
+  <link rel="stylesheet" href="assets/css/scrolltop.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fancybox.min.css" />
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body data-theme="dark">
+  <div id="preloader">
+    <div class="loader_line"></div>
+  </div>
+  <header class="header-area">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="#">
+              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                <path
+                  d="M 12 2 C 11.846875 2 11.693234 2.0349687 11.552734 2.1054688 L 3.5527344 6.1054688 C 3.2137344 6.2744688 3 6.621 3 7 L 3 15.65625 C 3 15.99025 3.1673125 16.303281 3.4453125 16.488281 C 4.1103125 16.931281 5 16.45525 5 15.65625 L 5 7.6171875 L 12 4.1171875 L 19 7.6171875 L 19 15.681641 C 19 16.480641 19.889688 16.956672 20.554688 16.513672 C 20.832687 16.328672 21 16.016641 21 15.681641 L 21 7 C 21 6.621 20.786266 6.2744688 20.447266 6.1054688 L 12.447266 2.1054688 C 12.306266 2.0349687 12.153125 2 12 2 z M 9.0605469 9.0800781 C 8.8938125 9.0697344 8.7209375 9.1008437 8.5546875 9.1835938 C 8.2156875 9.3515937 8 9.699125 8 10.078125 L 8 19 C 8 19.334 8.1673125 19.647031 8.4453125 19.832031 L 11.445312 21.832031 C 11.781313 22.056031 12.219687 22.056031 12.554688 21.832031 L 15.554688 19.832031 C 15.833687 19.647031 16 19.334 16 19 L 16 10.078125 C 16 9.699125 15.784312 9.3525938 15.445312 9.1835938 C 14.780313 8.8525937 14 9.335125 14 10.078125 L 14 18.464844 L 12 19.798828 L 10 18.464844 L 10 10.078125 C 10 9.520875 9.56075 9.1111094 9.0605469 9.0800781 z" />
+              </svg>
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
+              <path
+                d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav" id="nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">home</a>
+              </li>
+              <li class="nav-item animated-hover">
+                <a class="nav-link" aria-current="page" href="#about">about</a>
+              </li>
+
+              <li class="nav-item animated-hover">
+                <a class="nav-link" href="#portfolio">portfolio</a>
+              </li>
+
+              <li class="nav-item animated-hover">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="popup-mobile-menu offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+      <div class="offcanvas-header">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+          <path
+            d="M 12 2 C 11.846875 2 11.693234 2.0349687 11.552734 2.1054688 L 3.5527344 6.1054688 C 3.2137344 6.2744688 3 6.621 3 7 L 3 15.65625 C 3 15.99025 3.1673125 16.303281 3.4453125 16.488281 C 4.1103125 16.931281 5 16.45525 5 15.65625 L 5 7.6171875 L 12 4.1171875 L 19 7.6171875 L 19 15.681641 C 19 16.480641 19.889688 16.956672 20.554688 16.513672 C 20.832687 16.328672 21 16.016641 21 15.681641 L 21 7 C 21 6.621 20.786266 6.2744688 20.447266 6.1054688 L 12.447266 2.1054688 C 12.306266 2.0349687 12.153125 2 12 2 z M 9.0605469 9.0800781 C 8.8938125 9.0697344 8.7209375 9.1008437 8.5546875 9.1835938 C 8.2156875 9.3515937 8 9.699125 8 10.078125 L 8 19 C 8 19.334 8.1673125 19.647031 8.4453125 19.832031 L 11.445312 21.832031 C 11.781313 22.056031 12.219687 22.056031 12.554688 21.832031 L 15.554688 19.832031 C 15.833687 19.647031 16 19.334 16 19 L 16 10.078125 C 16 9.699125 15.784312 9.3525938 15.445312 9.1835938 C 14.780313 8.8525937 14 9.335125 14 10.078125 L 14 18.464844 L 12 19.798828 L 10 18.464844 L 10 10.078125 C 10 9.520875 9.56075 9.1111094 9.0605469 9.0800781 z" />
+        </svg>
+        <button type="button" data-bs-dismiss="offcanvas">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav main-menu">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">about</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="slider-area" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+          <div class="right-side">
+            <div class="introduction">
+              <span class="subtitle">introduction</span>
+              <h1 class="title">
+                Hi, I'm <span class="john">Rubel Mia</span><br />
+                <span class="a">a </span><span class="element"></span>
+              </h1>
+              <p>
+                Front End Developer with around 2 plus years of experience in
+                the software industry. Engineering background and passion in
+                user experience let`s think out of the in solving problems for
+                client.
+              </p>
+            </div>
+            <div class="flex">
+              <a href="#about" class="button button-about"><span>About Me</span></a>
+              <ul class="flex">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+          <div class="left-side">
+            <img src="assets/img/Home/wdesigner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-area" id="about">
+    <div class="container">
+      <div class="personal-details">
+        <div class="row">
+          <div class="section-title text-center">
+            <span class="common-description">My Intro</span>
+            <h3 class="common-title"><span>About</span>Me</h3>
+            <div class="animated-bar"></div>
+          </div>
+        </div>
+        <div class="personal-info">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="profile-photo">
+                <div class="relative">
+                  <img src="assets/img/About/R.JPG" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 center">
+              <div class="row">
+                <div class="col-xl-12">
+                  <h4>PERSONAL INFOS:</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <ul class="list-1">
+                    <li>
+                      <h6><span>First Name</span>Rubel</h6>
+                    </li>
+                    <li>
+                      <h6><span>Last Name</span>Mia</h6>
+                    </li>
+                    <li>
+                      <h6><span>Birthdate</span>15 october 1994</h6>
+                    </li>
+                    <li>
+                      <h6><span>Nationality</span>Bengali</h6>
+                    </li>
+                    <li>
+                      <h6><span>Experience</span>2 Years plus</h6>
+                    </li>
+                    <li>
+                      <h6><span>Address</span>Dhaka</h6>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <ul class="list-2">
+                    <li>
+                      <h6><span>Freelance</span>Available</h6>
+                    </li>
+                    <li>
+                      <h6><span>language</span>Bangla, English</h6>
+                    </li>
+                    <li>
+                      <h6><span>Phone</span>01318400511</h6>
+                    </li>
+                    <li>
+                      <h6><span>Email</span>rubelcmt.info@gmail.com</h6>
+                    </li>
+                    <li>
+                      <h6><span>Skype</span>Rubel Mia</h6>
+                    </li>
+                    <li>
+                      <h6><span>Dribbble</span>Rubel Mia</h6>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <a href="#contact" class="button button-hire"><span>Hire Me</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="personal-experience-inner">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <span class="common-description">check out of my resume</span>
+            <h3 class="common-title"><span>My</span>Resume</h3>
+            <div class="animated-bar"></div>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-xl-6 col-lg-6">
+            <div class="content">
+              <h4 class="maintitle text-center">education</h4>
+              <div class="education-list">
+                <div class="resume-single-list">
+                  <span class="bullet"></span>
+                  <div class="inner">
+                    <div class="heading">
+                      <div class="title">
+                        <h4>bsc of software systems</h4>
+                        <h3 class="sub-heading">
+                          University of victoria (2016-2019)
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Officiis maiores iusto odio repellendus sed
+                      obcaecati ut itaque quas beatae optio?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="resume-single-list">
+                  <span class="bullet"></span>
+                  <div class="inner">
+                    <div class="heading">
+                      <div class="title">
+                        <h4>diploma in computer science</h4>
+                        <h3 class="sub-heading">
+                          college of habhit (2010-2014)
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Officiis maiores iusto odio repellendus sed
+                      obcaecati ut itaque quas beatae optio?
+                    </p>
+                  </div>
+                </div>
+                <div class="resume-single-list">
+                  <span class="bullet"></span>
+                  <div class="inner">
+                    <div class="heading">
+                      <div class="title">
+                        <h4>SSC (Science)</h4>
+                        <h3 class="sub-heading">
+                          Jorkhali High School (2009 - 2010)
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Officiis maiores iusto odio repellendus sed
+                      obcaecati ut itaque quas beatae optio?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6">
+            <div class="content">
+              <h4 class="maintitle text-center">experience</h4>
+              <div class="experience-list">
+                <div class="resume-single-list">
+                  <span class="bullet"></span>
+                  <div class="inner">
+                    <div class="heading">
+                      <div class="title">
+                        <h4>Frontend developer</h4>
+                        <h3 class="sub-heading">
+                          Trilogy soft (April-2025-Continue)
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Officiis maiores iusto odio repellendus sed
+                      obcaecati ut itaque quas beatae optio?
+                    </p>
+                  </div>
+                </div>
+                <div class="resume-single-list">
+                  <span class="bullet"></span>
+                  <div class="inner">
+                    <div class="heading">
+                      <div class="title">
+                        <h4>Frontent developer</h4>
+                        <h3 class="sub-heading">
+                          Future Innovation LTD (2023-2024)
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Officiis maiores iusto odio repellendus sed
+                      obcaecati ut itaque quas beatae optio?
+                    </p>
+                  </div>
+                </div>
+                <div class="resume-single-list">
+                  <span class="bullet"></span>
+                  <div class="inner">
+                    <div class="heading">
+                      <div class="title">
+                        <h4>Web designer</h4>
+                        <h3 class="sub-heading">
+                          Templatemonster.com(10 Feb 2022 - Continuing)
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Officiis maiores iusto odio repellendus sed
+                      obcaecati ut itaque quas beatae optio?
+                    </p>
+                  </div>
+                </div>
+                <div class="resume-single-list">
+                  <span class="bullet"></span>
+                  <div class="inner">
+                    <div class="heading">
+                      <div class="title">
+                        <h4>web designer/Instructor</h4>
+                        <h3 class="sub-heading">MTI (2021-2022)</h3>
+                      </div>
+                    </div>
+                    <p class="description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Officiis maiores iusto odio repellendus sed
+                      obcaecati ut itaque quas beatae optio?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="personal-skills-inner">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <span class="common-description">My Level Of Knowledge In Some Tools</span>
+            <h3 class="common-title"><span>My</span>Skills</h3>
+            <div class="animated-bar"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="design-skill" data-aos="fade-right" data-aos-duration="1000">
+              <h4 class="maintitle text-center">Design Skill</h4>
+              <div class="skill-bars">
+                <div class="bar">
+                  <div class="info"><span>photoshop</span></div>
+                  <div class="progress-line photoshop"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>figma</span></div>
+                  <div class="progress-line figma"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>adobe xd</span></div>
+                  <div class="progress-line adobe-xd"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>adobe illustration</span></div>
+                  <div class="progress-line adobe-illustration">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>design</span></div>
+                  <div class="progress-line design"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="code-skill" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+              <h4 class="maintitle text-center">code Skill</h4>
+              <div class="skill-bars">
+                <div class="bar">
+                  <div class="info"><span>html</span></div>
+                  <div class="progress-line html"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>css</span></div>
+                  <div class="progress-line css"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>bootstrap</span></div>
+                  <div class="progress-line bootstrap"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>sass</span></div>
+                  <div class="progress-line sass"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>jquery</span></div>
+                  <div class="progress-line jquery"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-area section-padding" id="portfolio">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-12">
+          <div class="section-title position-relative">
+            <span class="common-description">Showcasing Some Of My Best Work</span>
+            <h3 class="common-title"><span>My</span> Portfolio</h3>
+            <div class="animated-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Filter Buttons -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="portfolio-menu animate__animated animate__fadeInUp animate__delay-2s">
+            <nav class="controls">
+              <button type="button" class="control clickbtn" data-filter="all"><span>All</span></button>
+              <button type="button" class="control clickbtn"
+                data-filter=".webdevelopment"><span>Portfolio</span></button>
+              <button type="button" class="control clickbtn" data-filter=".webdesign"><span>Restaurant</span></button>
+              <button type="button" class="control clickbtn" data-filter=".graphic"><span>Health-Care</span></button>
+              <button type="button" class="control clickbtn" data-filter=".car"><span>Car</span></button>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Items -->
+      <div class="row portfolio-list animate__animated animate__zoomIn animate__delay-3s" data-aos="fade-right"
+        data-aos-duration="1000">
+        <ul class="row list-unstyled ps-0">
+
+          <!-- Portfolio Item -->
+          <li class="mix webdevelopment col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://rubelpersonal-portfilo-template.netlify.app/" title="Click to zoom-in"
+                data-caption="Web Development" data-size="1200x600">
+                <img src="assets/img/Portfolio/011.png" alt="Portfolio Project - Web Development">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Portfolio</h3>
+                  <p>Promote your blog posts, case studies, and branded videos.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Restaurant -->
+          <li class="mix webdesign col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://themetech-it.github.io/Restaurent-one-html/" title="Click to zoom-in"
+                data-caption="Restaurant Website" data-size="1200x600">
+                <img src="assets/img/Portfolio/res2.png" alt="Restaurant Website Design">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Restaurant</h3>
+                  <p>Promote your restaurant or food brand with a stunning layout.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Car Tint -->
+          <li class="mix car col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://moonlightcooltint.com/" title="Click to zoom-in" data-caption="Car Tint Website"
+                data-size="1200x600">
+                <img src="assets/img/Portfolio/033.JPG" alt="Car Tint Business Website">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Car Tint</h3>
+                  <p>Modern business website for a car tinting service.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="mix car col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://cdrive-html.netlify.app/" title="Click to zoom-in" data-caption="Car Tint Website"
+                data-size="1200x600">
+                <img src="assets/img/Portfolio/car.png" alt="Car Tint Business Website">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Car Tint</h3>
+                  <p>Modern business website for a car tinting service.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- UI/UX Design -->
+          <li class="mix uiuxdesign col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://themetechit.com/restaurant-three/" title="Click to zoom-in" data-caption="UI/UX Design"
+                data-size="1200x600">
+                <img src="assets/img/Portfolio/res3.png" alt="UI/UX Design Project">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">UI/UX Design</h3>
+                  <p>Clean and modern interface focused on user experience.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Second Portfolio -->
+          <li class="mix webdevelopment col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://fluxelpersonal-portfolio.netlify.app/" title="Click to zoom-in"
+                data-caption="Web Development" data-size="1200x600">
+                <img src="assets/img/Portfolio/port2.png" alt="Web Development Project">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Portfolio</h3>
+                  <p>Modern portfolio design showcasing creative projects.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Another Restaurant -->
+          <li class="mix webdesign col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://themetech-it.github.io/Restaurent-two-html/" title="Click to zoom-in"
+                data-caption="Restaurant Design" data-size="1200x600">
+                <img src="assets/img/Portfolio/res2.png" alt="Restaurant Website Template">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Restaurant</h3>
+                  <p>Elegant design built for modern restaurant businesses.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="mix webdesign col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://themetech-it.github.io/Restaurent-three-html/" title="Click to zoom-in"
+                data-caption="Restaurant Design" data-size="1200x600">
+                <img src="assets/img/Portfolio/res3.png" alt="Restaurant Website Template">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Restaurant</h3>
+                  <p>Elegant design built for modern restaurant businesses.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Graphic Design -->
+          <li class="mix graphic col-xl-4 col-lg-4 col-md-6">
+            <div class="portfolio-image">
+              <a href="https://themetech-it.github.io/Healthcare-html/" title="Click to zoom-in" data-caption="Graphic Design"
+                data-size="1200x600">
+                <img src="assets/img/Portfolio/022.JPG" alt="Graphic Design Project">
+                <div class="info">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <h3 class="title">Health Care</h3>
+                  <p>Creative visual design for health care branding.</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact-area section-padding" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <span class="common-description">contact</span>
+          <h3 class="common-title"><span>My</span>Contact</h3>
+          <div class="animated-bar"></div>
+        </div>
+        <div class="contact-text">
+          <p>Please fill out the form on this section to contact with me.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="contact-info-another">
+            <div class="contact-option">
+              <div class="icon-style">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>Mirpur-12, Dhaka</p>
+              </div>
+            </div>
+            <div class="contact-option mt-20">
+              <div class="icon-style">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email Me</h4>
+                <p>rubelcmt.info@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-option mt-20">
+              <div class="icon-style"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Call Me</h4>
+                <p>01318400511</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="contact-form-wraper">
+            <div class="contact-info">
+              <form action="mail.php" method="POST" id="contact_form">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                      Your message was sent successfully.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="name">
+                      <input type="text" name="name" placeholder="Your Name" required="" />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="email">
+                      <input type="email" name="email" placeholder="Your Email" required="" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <textarea name="message" rows="7" placeholder="Message" required=""></textarea>
+                  </div>
+                  <div class="contact-btn">
+                    <button class="button msg-btn">
+                      <span>Send Request</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-12">
+          <div class="map-area">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799184417!2d-74.25987656873812!3d40.69767006297679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1653908333177!5m2!1sen!2sbd"
+                height="320" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <label class="theme-switcher-label d-flex">
+    <input class="theme-switcher" type="checkbox" />
+    <span class="switch-handle">
+      <span class="light-text"><i class="fas fa-moon" id="toggleDark"></i></span>
+    </span>
+  </label>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <p class="description">
+            Copyright &copy; 2023 All Rights Reserved.
+          </p>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <p class="description-1">
+            Developed by
+            <a href="https://www.themetech.net/demo/index.html">Rubel</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="material-scrolltop" type="button">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/counterup.min.js"></script>
+  <script src="assets/js/slick-slider.min.js"></script>
+  <script src="assets/js/typed.min.js"></script>
+  <script src="assets/js/one-page-nav.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/fancybox.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/scrolltop.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
