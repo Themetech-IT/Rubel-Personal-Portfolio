@@ -506,7 +506,6 @@ span.bullet {
 .relative img {
   width: auto;
   z-index: 10;
-  margin-left: 83px;
 }
 
 .relative:before {
